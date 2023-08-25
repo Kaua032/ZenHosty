@@ -45,6 +45,7 @@
     margin-top: 60px;
     background-image: url(../assets/lock.svg);
     background-repeat: no-repeat;
+    background-position: 15px 15px;
 }
 #register{
     margin-top: 15px;
@@ -66,18 +67,26 @@
     font-weight: 500;
     line-height: normal;
 }
-form div{
+form #confirmArea{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 30px;
     align-items: center;
     width: 100%;
 
     font-family: Roboto;
-
-    margin-top: 90px;
+    margin-top: 60px;
 }
+form #confirmArea div{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 form div #entrar{
-    width: 130px;
+    width: 300px;
     height: 50px;
 
     border-radius: 50px;
@@ -91,22 +100,37 @@ form div #entrar{
     line-height: normal;
 
     border: none;
+
+    cursor: pointer;
 }
-form div p{
+form #confirmArea hr{
+    width: 132px;
+
+    border: 0.5px solid #10768D;
+}
+
+form #confirmArea div p{
     color: #10768D;
     font-family: Roboto;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-}
-form div #google{
-    width: 130px;
+} 
+form #confirmArea #google{
+    width: 300px;
     height: 50px;
+
+    display: flex;
+    align-items: center;
+    padding-left: 68px;
 
     border-radius: 50px;
     border: 1px solid #10768D;
     background: #FFF;
+    background-image: url(../assets/google.svg);
+    background-repeat: no-repeat;
+    background-position: 10px 9px;
 
     color: #7D7D7D;
     font-family: Roboto;
@@ -114,4 +138,6 @@ form div #google{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
+    cursor: pointer;
 }
