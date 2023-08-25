@@ -14,13 +14,13 @@ function App() {
       <section id='loginPainel'>
         <h2>Login</h2>
         <form action="">
-          <input type="email" name='email' placeholder='Email' />
-          <input type="password" name='password' placeholder='Senha' />
-          <p>Não possui uma conta? <a href="">Registre-se</a></p>
+          <input id='email' type="email" name='email' placeholder='Email' />
+          <input id='password' type="password" name='password' placeholder='Senha' />
+          <p id='register'>Não possui uma conta? <a href="">Registre-se</a></p>
           <div>
-            <button>Entrar</button>
+            <button id='entrar'>Entrar</button>
             <p>ou</p>
-            <button>Google</button>
+            <button id='google'>Google</button>
           </div>
         </form>
       </section>
