@@ -1,3 +1,49 @@
+main{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+section{
+    width: 50%;
+}
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    background: linear-gradient(315deg, #19A3A6 16.31%, #03355A 100%);
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25) inset;
+}
+#zen{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#hosty{
+    color: #282828;
+    font-family: Poppins;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#loginPainel{
+    height: 100vh;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+
+}
 #loginPainel h2{
     font-family: Poppins;
     font-size: 36px;

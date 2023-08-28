@@ -1,17 +1,20 @@
 const express = require('express');
 const cors = require('cors');
-const {v4: uuid} = require('uuid')
+const {v4: uuid} = require('uuid');
 
 const PORT = 3000;
 
 const app = express();
 
 app.use(express.json());
+app.use(cors());
 
 const users = [];
 
 app.get('/user', (req, res) => {
     const { email, password } = req.body;
+
+    console.log('O backend funcionou junto com o front')
 
     const user = users.find((user) => user.password === password && user.email === email);
 
